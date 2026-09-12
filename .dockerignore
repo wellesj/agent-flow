@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.gitignore
+.env.local
+.env*.local
+.env.production
+.env.production.example
+Dockerfile
+.dockerignore
+docker-compose.yml
+README.md
+AGENT-规划报告.md
+npm-debug.log*
