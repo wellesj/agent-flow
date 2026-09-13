@@ -1,6 +1,7 @@
 # 03-agent-flow · Tool Calling Agent（LangChain + LangGraph + AI SDK + React Flow）
 
 > 第三阶段作品：带 **Tool Calling 的多步 Agent**，用 **React Flow** 实时展示执行步骤。  
+> **✅ 已上线：http://47.101.37.239:8082**（阿里云轻量服务器 + Docker Compose：web + nginx）  
 > 编排层：**LangChain.js v1 + LangGraph.js**（`createReactAgent`）  
 > 流式通道：**Vercel AI SDK**（`@ai-sdk/langchain` 的 `toUIMessageStream` 桥接）  
 > 可视化：**React Flow**（`@xyflow/react`）  
