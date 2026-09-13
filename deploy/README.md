@@ -23,7 +23,7 @@ cp .env.production.example .env.production
 vim .env.production   # 填 DEEPSEEK_API_KEY（或 LLM_* 切换模型）
 
 # 3. 构建并启动
-docker compose -f docker-compose.yml --env-file .env.production up -d --build
+docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
 
 # 4. 验证
 curl http://127.0.0.1/api/chat -H 'Content-Type: application/json' \
@@ -35,7 +35,7 @@ curl http://127.0.0.1/api/chat -H 'Content-Type: application/json' \
 
 ```bash
 git pull
-docker compose -f docker-compose.yml --env-file .env.production up -d --build
+docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
 ```
 
 ## 常见问题

@@ -59,7 +59,7 @@ npm run dev
 | `components/AgentFlow.tsx` | React Flow 步骤可视化（工具节点/结果节点/状态徽标） |
 | `components/AssistantMarkdown.tsx` | Markdown 安全渲染（复用 01-chatbot） |
 | `app/page.tsx` | 聊天 UI + 工具调用展示 + 步骤面板 |
-| `Dockerfile` / `docker-compose.yml` / `nginx/` / `deploy/` | 生产部署资产 |
+| `Dockerfile` / `docker-compose.prod.yml` / `nginx/` / `deploy/` | 生产部署资产 |
 | `AGENT-规划报告.md` | 引入 LangChain.js 的规划与取舍 |
 
 ## 部署

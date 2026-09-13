@@ -1,6 +1,6 @@
 # P6：03-agent-flow 生产部署（web + nginx；无数据库）
 # 用法：
-#   docker compose -f docker-compose.yml --env-file .env.production up -d --build
+#   docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
 # 模型 Key 经 .env.production 注入（DEEPSEEK_API_KEY 或 LLM_* 可切换模型）
 # 注意：nginx 映射宿主 8082（80 被 ChatBot、8081 被 RAG 占用；公网访问 http://IP:8082）
 

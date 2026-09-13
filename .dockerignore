@@ -8,7 +8,7 @@ node_modules
 .env.production.example
 Dockerfile
 .dockerignore
-docker-compose.yml
+docker-compose.prod.yml
 README.md
 AGENT-规划报告.md
 npm-debug.log*
