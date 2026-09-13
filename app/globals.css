@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "@xyflow/react/dist/style.css";
-@import "highlight.js/styles/github-dark.css";
+/* 浅色代码高亮主题（与浅色代码块背景匹配） */
+@import "highlight.js/styles/github.css";
+
+/*
+ * 强制浅色主题：
+ * 把 dark: 变体从「跟随系统」改为「显式 .dark 类」驱动。
+ * 本项目不给 html 加 .dark 类，因此恒为浅色——避免系统深色模式导致显示不一致。
+ * 若以后要启用深色模式：给 <html> 加 className="dark"，并恢复下方 prefers-color-scheme 变量即可。
+ */
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
@@ -12,13 +21,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

@@ -201,13 +201,14 @@ export function AgentFlow({ parts }: { parts: { type: string; [key: string]: unk
   }
 
   return (
-    <div className="h-72 rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+    <div className="h-72 rounded-lg border border-zinc-200 bg-white">
       <ReactFlow
         nodes={nodes}
         edges={edges}
         fitView
         nodesDraggable={false}
         proOptions={{ hideAttribution: true }}
+        colorMode="light"
         className="rounded-lg"
       >
         <Background gap={16} size={1} />

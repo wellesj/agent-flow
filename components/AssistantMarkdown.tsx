@@ -86,7 +86,7 @@ export function AssistantMarkdown({ text }: Props) {
             pre: ({ children, ...props }) => (
               <pre
                 {...props}
-                className="my-3 overflow-x-auto rounded-lg bg-zinc-900 p-3 text-[13px] leading-5 text-zinc-100"
+                className="my-3 overflow-x-auto rounded-lg border border-zinc-200 bg-zinc-50 p-3 text-[13px] leading-5 text-zinc-800"
               >
                 {children}
               </pre>
