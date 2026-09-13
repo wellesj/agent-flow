@@ -15,7 +15,8 @@ FROM ${NODE_BASE} AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
+# mkdir -p public：防止源码里 public 为空/缺失（空目录在 git/scp 中易丢失）导致后续 COPY 失败
+RUN mkdir -p public && npm run build
 
 # ---- 运行时 ----
 FROM ${NODE_BASE} AS runner
